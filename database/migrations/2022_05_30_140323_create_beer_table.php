@@ -3,6 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use App\Models\Beer;
 
 class CreateBeerTable extends Migration
 {
@@ -13,7 +14,7 @@ class CreateBeerTable extends Migration
      */
     public function up()
     {
-        Schema::create('beer', function (Blueprint $table) {
+        Schema::create('beers', function (Blueprint $table) {
             $table->id();
             $table->string('nome');
             $table->string('descrizione');
@@ -35,6 +36,6 @@ class CreateBeerTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('beer');
+        Schema::dropIfExists('beers');
     }
 }
