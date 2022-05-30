@@ -1,4 +1,4 @@
-/*!
+@import url(https://fonts.googleapis.com/css2?family=Heebo:wght@400;800&family=Inknut+Antiqua:wght@400;800&display=swap);/*!
  * Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  * Copyright 2022 Fonticons, Inc.
@@ -7776,3 +7776,146 @@ readers do not read off random characters that represent icons */
   font-display: block;
   src: url("../webfonts/fa-v4compatibility.woff2") format("woff2"), url("../webfonts/fa-v4compatibility.ttf") format("truetype");
   unicode-range: U+F041,U+F047,U+F065-F066,U+F07D-F07E,U+F080,U+F08B,U+F08E,U+F090,U+F09A,U+F0AC,U+F0AE,U+F0B2,U+F0D0,U+F0D6,U+F0E4,U+F0EC,U+F10A-F10B,U+F123,U+F13E,U+F148-F149,U+F14C,U+F156,U+F15E,U+F160-F161,U+F163,U+F175-F178,U+F195,U+F1F8,U+F219,U+F250,U+F252,U+F27A; }
+header {
+  width: 100%;
+  height: 85px;
+  padding: 0 30px;
+  color: white;
+  background-color: #9e2a2b;
+  border-bottom: 5px solid white;
+  display: flex;
+}
+header .logo {
+  display: flex;
+  width: 80px;
+  height: 80px;
+  flex-direction: column;
+  justify-content: center;
+}
+header .logo i {
+  font-size: 3em;
+}
+header .title {
+  margin-left: 20px;
+  line-height: 80px;
+  font-family: "Inknut Antiqua", serif;
+}
+
+body {
+  background-color: #adadad;
+}
+
+main {
+  background-color: #adadad;
+}
+main .beercontainer {
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+main .beercontainer .beer {
+  margin: 0 20px 50px;
+  width: 500px;
+  height: 260px;
+  max-height: 420px;
+  display: flex;
+  padding: 5px 10px;
+  padding-right: 0;
+  border-radius: 5px;
+  box-shadow: 0px 3px 10px 1px #5e5e5e;
+  justify-content: space-between;
+  font-family: "Heebo", sans-serif;
+  background-color: white;
+  transition: 0.2s;
+  cursor: pointer;
+  position: relative;
+  filter: brightness(0.9);
+}
+main .beercontainer .beer:hover {
+  transform: scale(1.05);
+  filter: brightness(1);
+}
+main .beercontainer .beer:hover .img .overlay {
+  display: flex;
+}
+main .beercontainer .beer .text span {
+  font-weight: bold;
+}
+main .beercontainer .beer .text h2 {
+  margin-top: -15px;
+  color: #1b6a80;
+  font-family: "Inknut Antiqua", serif;
+}
+main .beercontainer .beer .text h3 {
+  color: #1b6a80;
+  margin: -15px 0 20px;
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+main .beercontainer .beer .img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-left: 2px solid #1b6a80;
+  position: relative;
+}
+main .beercontainer .beer .img img {
+  max-width: 200px;
+  max-height: 250px;
+}
+main .beercontainer .beer .img .overlay {
+  width: 100%;
+  height: calc(100% + 10px);
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.9);
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.9) 0%, rgba(97, 97, 97, 0) 100%);
+  position: absolute;
+  display: none;
+  color: white;
+  font-size: 3rem;
+  justify-content: center;
+  flex-direction: column;
+  transition: 0.2s;
+}
+main .beercontainer .beer .img .overlay i {
+  margin: auto;
+}
+main .beercontainer .beer .price {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  background-color: #690001;
+  border-radius: 0 0 5px 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 22px;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #7a7a7a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9e2a2b;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #690001;
+}

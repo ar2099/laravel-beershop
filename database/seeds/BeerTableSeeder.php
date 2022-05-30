@@ -33,7 +33,7 @@ class BeerTableSeeder extends Seeder
                 'tipo' => 'lager',
                 'quantità' => 'confezione da 3',
                 'volume' => '66cl',
-                'url' => 'https://www.cantinadellabirra.it/media/catalog/product/cache/1/image/460x750/9df78eab33525d08d6e5fb8d27136e95/b/o/bootle-peroni-cruda.png)',
+                'url' => 'https://www.cantinadellabirra.it/media/catalog/product/cache/1/image/460x750/9df78eab33525d08d6e5fb8d27136e95/b/o/bootle-peroni-cruda.png',
             ],
             [
                 'nome' => 'IPA',
