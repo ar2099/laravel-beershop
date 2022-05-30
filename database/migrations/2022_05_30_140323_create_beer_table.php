@@ -15,6 +15,14 @@ class CreateBeerTable extends Migration
     {
         Schema::create('beer', function (Blueprint $table) {
             $table->id();
+            $table->string('nome');
+            $table->string('descrizione');
+            $table->string('paese_di_provenienza');
+            $table->float('prezzo');
+            $table->float('gradazione_alcolica');
+            $table->string('tipo');
+            $table->string('quantità');
+            $table->string('volume');
             $table->timestamps();
         });
     }
