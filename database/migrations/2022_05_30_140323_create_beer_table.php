@@ -23,6 +23,7 @@ class CreateBeerTable extends Migration
             $table->string('tipo');
             $table->string('quantità');
             $table->string('volume');
+            $table->string('url');
             $table->timestamps();
         });
     }
